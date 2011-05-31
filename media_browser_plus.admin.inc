@@ -34,7 +34,7 @@ function media_browser_plus_folder_media_import($root, &$context) {
     if(!isset($media->field_folder[LANGUAGE_NONE])) {
       $media->field_folder = array(LANGUAGE_NONE => array(array('tid' => $root)));
       $context['results']['success'] = $media->fid;
-      media_save($media);
+      file_save($media);
     }
   }
   // increment start
